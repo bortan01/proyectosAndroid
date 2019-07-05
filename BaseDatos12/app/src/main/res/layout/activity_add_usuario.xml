@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/actividadredonda"
+    tools:context=".AddUsuarioActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Usuario"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@android:color/background_light"
+        />
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/esquinaredonda"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12sp"
+        />
+    <EditText
+        android:id="@+id/clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="clave"
+        android:layout_below="@+id/usuario"
+        android:background="@drawable/esquinaredonda"
+        android:inputType="textPassword"
+        android:layout_marginBottom="12sp"
+        />
+    <EditText
+        android:id="@+id/reclave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repetir clave"
+        android:layout_below="@+id/clave"
+        android:background="@drawable/esquinaredonda"
+        android:inputType="textPassword"
+        android:layout_marginBottom="12sp"
+        />
+    <TextView
+        android:id="@+id/usuariorecuperado"
+        android:text="Usuario Recuperado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reclave"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sion"
+        android:onClick="cerrar"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/esquinaredonda"
+        />
+</RelativeLayout>

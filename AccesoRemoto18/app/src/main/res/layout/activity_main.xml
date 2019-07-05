@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bbutton"
+        android:text="Buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="recargar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toStartOf="@id/boton2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:hint="Telefono..."
+        />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/telefono"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/boton2"
+        android:hint="Nombre..."
+        android:inputType="textPersonName" />
+    <Button
+
+        android:id="@+id/boton2"
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textAllCaps="false"
+        android:onClick="Guardar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/filtro"
+        android:hint="Buscar por..."
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filtro"
+       android:layout_alignParentStart="false"
+        android:layout_above="@id/nombre"
+
+        >
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="nuevo"
+        android:text="Nuevo Registro"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+
+        />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/boton"
+        android:layout_alignStart="@id/boton"
+        android:layout_below="@id/boton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Mapa"
+        android:onClick="mapa"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+
+        />
+
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/boton2"
+        android:layout_alignStart="@id/boton2"
+        android:layout_below="@id/boton2"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Salir"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="salir"
+
+        />
+
+</RelativeLayout>

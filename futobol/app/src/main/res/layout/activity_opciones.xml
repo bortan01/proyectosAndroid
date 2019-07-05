@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".opcionesActivity">
+
+
+    <Button
+        android:id="@+id/equipos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="equipos"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="crearEquipo"
+
+        />
+
+    <Button
+        android:id="@+id/jornada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="generar jornadas"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/equipos"
+        android:onClick="generarJornada"
+        />
+
+    <Button
+        android:id="@+id/resultados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultados"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/jornada"
+        android:onClick="Resultados"
+
+        />
+
+    <Button
+        android:id="@+id/deletejornada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="borrar jornadas"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/resultados"
+        android:onClick="borrarjornadas"
+
+        />
+
+
+    <Button
+    android:id="@+id/deleteequipo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="borrar equipos"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/deletejornada"
+android:onClick="borrarequipos"
+    />
+
+    <Button
+        android:id="@+id/terminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terminar"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="prueba"
+
+
+        />
+
+
+
+</RelativeLayout>
